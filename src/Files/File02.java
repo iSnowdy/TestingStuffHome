@@ -13,7 +13,7 @@ public class File02 {
         BufferedReader bufferedReader = null;
 
         try {
-            file = new FileWriter("C:\\Users\\AndyLópezRey\\Documents\\Programación\\IntelliJ\\Java\\TestingStuff\\filename.txt");
+            file = new FileWriter("filename.txt");
             // We can add ", true); at the end of FileWriter to append and not overwrite the information in the file everytime we run the code
             printWriter = new PrintWriter(file);
 
@@ -32,7 +32,7 @@ public class File02 {
         // We read it once we've written it
 
         try {
-            fileReader = new FileReader("C:\\Users\\AndyLópezRey\\Documents\\Programación\\IntelliJ\\Java\\TestingStuff\\filename.txt");
+            fileReader = new FileReader("filename.txt");
             bufferedReader = new BufferedReader(fileReader);
 
             String line;
