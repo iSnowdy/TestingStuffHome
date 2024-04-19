@@ -4,12 +4,12 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-public class KeyListenerExample extends Frame implements KeyListener {
+public class KeyListener01 extends Frame implements KeyListener {
 
     private TextField textField;
     private Label displayLabel;
 
-    public KeyListenerExample() {
+    public KeyListener01() {
         // Frame
         setTitle("Type Text Display");
         setSize(400, 200);
@@ -58,6 +58,6 @@ public class KeyListenerExample extends Frame implements KeyListener {
     }
 
     public static void main (String[] args) {
-        new KeyListenerExample();
+        new KeyListener01();
     }
 }

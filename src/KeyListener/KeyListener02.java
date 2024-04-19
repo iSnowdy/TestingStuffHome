@@ -5,12 +5,12 @@ import java.awt.event.*;
 import java.util.Arrays;
 
 
-public class ImprovedListener extends Frame implements KeyListener {
+public class KeyListener02 extends Frame implements KeyListener {
 
     private TextField textField;
     private Label displayLabel;
 
-    public ImprovedListener() {
+    public KeyListener02() {
         // Frame
         setTitle("Type Text Display");
         setSize(400, 200);
@@ -74,6 +74,6 @@ public class ImprovedListener extends Frame implements KeyListener {
     }
 
     public static void main (String[] args) {
-        new ImprovedListener();
+        new KeyListener02();
     }
 }
