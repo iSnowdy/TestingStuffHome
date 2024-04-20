@@ -22,7 +22,6 @@ public class KeyListener04 extends Frame implements KeyListener {
         setSize(400, 200);
         setLayout(new FlowLayout());
 
-
         textField = new TextField(20);
         textField.addKeyListener(this);
         add(textField);
