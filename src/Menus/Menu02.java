@@ -48,7 +48,8 @@ public class Menu02 {
                 case 3 -> {
                     System.out.println("------------------------------------------------------------------------------------");
                     // int startLine = 0; No need for this here cuz it is the start of the document
-                    int endLine = 15;
+                    int startLine = 17;
+                    int endLine = 40;
 
                     try {
                         FileReader fileReader = new FileReader("Instructions.txt");
