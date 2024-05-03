@@ -3,8 +3,9 @@ package KeyListener;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class KeyListener05 extends JFrame implements KeyListener {
 
@@ -30,9 +31,10 @@ public class KeyListener05 extends JFrame implements KeyListener {
 
         textField = new TextField(40);
         textField.addKeyListener(this);
-        textField.setBackground(Color.ORANGE);
+        textField.setBackground(Color.CYAN);
         textField.setFont(font);
         add(textField);
+        textField.requestFocusInWindow();
 
         // This label in the future will be the arrow inputs that the user must type
         // Problem: the String must be in UNICODE KEKW
@@ -40,7 +42,7 @@ public class KeyListener05 extends JFrame implements KeyListener {
         // It was the Frame class... outdated. JLabel was the answer ><
 
         Font labelFont = new Font("DejaVu Sans", Font.PLAIN, 20);
-        String labelText = new String("→ ↑ ↓ ↓ ↑ → ↑ ↑ ↑ → → → ↓ ← ↓ ↑ ↑ ↓ ↓ ←");
+        String labelText = new String("← ↓ → ↓ → ← ↑ ← ↑ ← ");
         displayLabel = new JLabel(labelText);
         displayLabel.setFont(labelFont);
         add(displayLabel);
@@ -109,7 +111,7 @@ public class KeyListener05 extends JFrame implements KeyListener {
     }
 
     public static void main (String[] args) {
-        new KeyListener05(5);
+        new KeyListener05(10);
         // setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); so when pressing X it closes. Future implementation
 
         /*
