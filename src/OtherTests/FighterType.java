@@ -1,10 +1,13 @@
 package OtherTests;
+import java.util.Scanner;
 
 public class FighterType {
     public static String setFighterType(String fighterName) { // Take as a parameter if it is the first or second user?
-        int vitality = 2;
-        int strength = 4;
-        int dexterity = 7;
+        Scanner scanner = new Scanner(System.in);
+
+        int vitality = scanner.nextInt();
+        int strength = scanner.nextInt();
+        int dexterity = scanner.nextInt();
         String fighterType;
 
         String stats =
